@@ -9,9 +9,10 @@ const Signup = (props) => {
 	const handleSubmit = (e) => {
 		e.preventDefault(); // prevent the page from reloading on Submit
 
-		if (firstName != '' && lastName != '')
+		if (firstName != '' && lastName != '' && email != '' && password != '')
 			// do not submit if form is not empty
 			props.setUsername(firstName + ' ' + lastName);
+		else alert('Please fill all fields.');
 
 		// test if everything was set properly
 		console.log(firstName + ' ' + lastName);
@@ -31,11 +32,16 @@ const Signup = (props) => {
 
 	return (
 		<div>
+			<h1>SIGN UP</h1>
+			<p>
+				HAVE AN ACCOUNT? <b>LOG IN NOW</b>
+			</p>
 			<form>
-				<div>
+				<div class='form-group'>
 					<input
 						type='text'
-						placeholder='firstName'
+						class='form-control'
+						placeholder='FIRST NAME'
 						onChange={(e) => {
 							setFirstName(e.target.value); // anonymous function for setting first name value
 						}}
@@ -43,7 +49,8 @@ const Signup = (props) => {
 					/>
 					<input
 						type='text'
-						placeholder='lastName'
+						class='form-control'
+						placeholder='LAST NAME'
 						onChange={(e) => {
 							setLastName(e.target.value); // anonymous function for setting last name value
 						}}
@@ -51,7 +58,8 @@ const Signup = (props) => {
 					/>
 					<input
 						type='email'
-						placeholder='email'
+						class='form-control'
+						placeholder='EMAIL'
 						onChange={(e) => {
 							setEmail(e.target.value); // anonymous function for setting email value
 						}}
@@ -59,7 +67,8 @@ const Signup = (props) => {
 					/>
 					<input
 						type='password'
-						placeholder='password'
+						class='form-control'
+						placeholder='PASSWORD'
 						onChange={(e) => {
 							setPassword(e.target.value); // anonymous function for setting password value
 						}}
