@@ -1,11 +1,6 @@
 import React from 'react';
 
 const Welcome = (props) => {
-	const handleLogout = (e) => {
-		e.preventDefault();
-		props.setUsername('');
-	};
-
 	return (
 		<div class='welcome'>
 			<h1>Welcome {props.username}!</h1>
@@ -22,13 +17,11 @@ const Welcome = (props) => {
 				orci. Etiam ornare risus eu blandit fringilla. Nullam interdum accumsan
 				elit non aliquam.
 				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
 			</p>
-			<input
-				type='submit'
-				class='btn btn-primary'
-				value='Logout'
-				onClick={handleLogout}
-			/>
 		</div>
 	);
 };

@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Navbar = (props) => {
+	const handleLogout = (e) => {
+		e.preventDefault();
+		props.setUsername('');
+	};
 	if (props.username == '')
 		return (
 			<nav class='navbar navbar-expand-md justify-content-between'>
@@ -76,8 +80,16 @@ const Navbar = (props) => {
 								VOLUNTEER
 							</a>
 						</li>
+						<li class='nav-item'>Logged in as: {props.username}</li>
+						<li class='nav-item'>
+							<input
+								type='submit'
+								class='btn logout'
+								value='Logout'
+								onClick={handleLogout}
+							/>
+						</li>
 					</ul>
-					<div class='user'>Logged in as: {props.username}</div>
 				</div>
 			</nav>
 		);

@@ -19,8 +19,8 @@ function App() {
 	} else {
 		return (
 			<div>
-				<Navbar username={username} />
-				<Welcome username={username} setUsername={setUsername} />
+				<Navbar username={username} setUsername={setUsername} />
+				<Welcome username={username} />
 				<Footer />
 			</div>
 		);
