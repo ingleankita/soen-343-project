@@ -17,7 +17,7 @@ function App() {
 			</div>
 		);
 	} else {
-		return <Welcome username={username} />;
+		return <Welcome username={username} setUsername={setUsername} />;
 	}
 }
 
