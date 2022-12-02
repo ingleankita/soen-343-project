@@ -32,48 +32,54 @@ const Signup = (props) => {
 
 	return (
 		<div>
-			<h1>SIGN UP</h1>
+			<h1>
+				<b>SIGN UP</b>
+			</h1>
 			<p>
 				HAVE AN ACCOUNT? <b>LOG IN NOW</b>
 			</p>
-			<form>
-				<div class='form-group'>
-					<input
-						type='text'
-						class='form-control'
-						placeholder='FIRST NAME'
-						onChange={(e) => {
-							setFirstName(e.target.value); // anonymous function for setting first name value
-						}}
-						value={firstName} // get value of input from state
-					/>
-					<input
-						type='text'
-						class='form-control'
-						placeholder='LAST NAME'
-						onChange={(e) => {
-							setLastName(e.target.value); // anonymous function for setting last name value
-						}}
-						value={lastName} // get value of input from state
-					/>
-					<input
-						type='email'
-						class='form-control'
-						placeholder='EMAIL'
-						onChange={(e) => {
-							setEmail(e.target.value); // anonymous function for setting email value
-						}}
-						value={email} // get value of input from state
-					/>
-					<input
-						type='password'
-						class='form-control'
-						placeholder='PASSWORD'
-						onChange={(e) => {
-							setPassword(e.target.value); // anonymous function for setting password value
-						}}
-						value={password} // get value of input from state
-					/>
+			<form class='form-signin'>
+				<div>
+					<div class='form-input'>
+						<input
+							type='text'
+							placeholder='FIRST NAME'
+							onChange={(e) => {
+								setFirstName(e.target.value); // anonymous function for setting first name value
+							}}
+							value={firstName} // get value of input from state
+						/>
+					</div>
+					<div class='form-input'>
+						<input
+							type='text'
+							placeholder='LAST NAME'
+							onChange={(e) => {
+								setLastName(e.target.value); // anonymous function for setting last name value
+							}}
+							value={lastName} // get value of input from state
+						/>
+					</div>
+					<div class='form-input'>
+						<input
+							type='email'
+							placeholder='EMAIL'
+							onChange={(e) => {
+								setEmail(e.target.value); // anonymous function for setting email value
+							}}
+							value={email} // get value of input from state
+						/>
+					</div>
+					<div class='form-input'>
+						<input
+							type='password'
+							placeholder='PASSWORD'
+							onChange={(e) => {
+								setPassword(e.target.value); // anonymous function for setting password value
+							}}
+							value={password} // get value of input from state
+						/>
+					</div>
 				</div>
 				<div className='btns'>
 					<input
