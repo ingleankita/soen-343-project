@@ -32,7 +32,7 @@ const Signup = (props) => {
 
 	return (
 		<div>
-			<h1>
+			<h1 class='signup-title'>
 				<b>SIGN UP</b>
 			</h1>
 			<p>
@@ -81,12 +81,11 @@ const Signup = (props) => {
 						/>
 					</div>
 				</div>
-				<div className='btns'>
+				<div>
 					<input
+						class='form-btn'
 						type='submit'
-						className='btn btn-light search-btn'
-						value='Submit'
-						class='btn btn-primary'
+						value='SUBMIT'
 						onClick={handleSubmit}
 					/>
 				</div>
