@@ -31,10 +31,21 @@
 }
 
 .signup-title {
+	margin-top: 5%;
 	color: #2d2424;
 	font-size: 5rem;
 }
 
 .nav-link {
 	color: #2d2424;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.nav {
+	padding: 2%;
+}
+
+.navbar {
+	background-color: #f4ecf2;
 }
