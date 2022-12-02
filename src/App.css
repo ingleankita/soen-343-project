@@ -11,19 +11,19 @@
 }
 
 .form-input input {
-	width: 100%;
-	max-width: 730px;
-	padding: 15px;
-	margin: 10px auto;
+	width: 90%;
+	max-width: 500px;
+	padding: 10px;
+	margin: 7px auto;
 	border-radius: 0;
-	border-width: 4px;
+	border-width: 3px;
 }
 
 .form-btn {
 	width: 100%;
 	max-width: 230px;
 	padding: 15px;
-	margin: 50px auto;
+	margin: 30px auto;
 	border-radius: 0;
 	border-width: 0;
 	background-color: #865439;
@@ -31,15 +31,15 @@
 }
 
 .signup-title {
-	margin-top: 4%;
+	margin-top: 3%;
 	color: #2d2424;
-	font-size: 5rem;
+	font-size: 3.5rem;
 }
 
 .nav-link {
 	color: #2d2424;
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 .nav {
@@ -48,4 +48,22 @@
 
 .navbar {
 	background-color: #f4ecf2;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	color: white;
+	font-size: 1rem;
+	background-color: #865439;
+	text-align: left;
+	padding: 2% 5%;
+}
+
+.user {
+	align-items: right;
+}
+
+.welcome {
+	margin: 2% 5%;
 }

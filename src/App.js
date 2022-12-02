@@ -11,13 +11,19 @@ function App() {
 	if (username == '') {
 		return (
 			<div className='App'>
-				<Navbar />
+				<Navbar username={username} />
 				<Signup setUsername={setUsername} />
 				<Footer />
 			</div>
 		);
 	} else {
-		return <Welcome username={username} setUsername={setUsername} />;
+		return (
+			<div>
+				<Navbar username={username} />
+				<Welcome username={username} setUsername={setUsername} />
+				<Footer />
+			</div>
+		);
 	}
 }
 
