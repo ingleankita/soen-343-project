@@ -10,7 +10,7 @@ const Signup = (props) => {
 		e.preventDefault(); // prevent the page from reloading on Submit
 
 		if (firstName != '' && lastName != '' && email != '' && password != '')
-			// do not submit if form is not empty
+			// do not submit if form is empty
 			props.setUsername(firstName + ' ' + lastName);
 		else alert('Please fill all fields.');
 
