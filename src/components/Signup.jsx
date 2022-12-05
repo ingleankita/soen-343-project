@@ -15,9 +15,9 @@ const Signup = (props) => {
 		else alert('Please fill all fields.');
 
 		// test if everything was set properly
-		console.log(firstName + ' ' + lastName);
-		console.log(email);
-		console.log(password);
+		// console.log(firstName + ' ' + lastName);
+		// console.log(email);
+		// console.log(password);
 
 		clearForm();
 	};

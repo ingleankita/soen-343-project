@@ -9,6 +9,7 @@ function App() {
 	const [username, setUsername] = useState('');
 
 	if (username == '') {
+		// if user is not logged in
 		return (
 			<div className='App'>
 				<Navbar username={username} />
@@ -17,6 +18,7 @@ function App() {
 			</div>
 		);
 	} else {
+		// if user is logged in
 		return (
 			<div>
 				<Navbar username={username} setUsername={setUsername} />
