@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../image.png';
 
 const Navbar = (props) => {
 	const handleLogout = (e) => {
@@ -10,12 +11,7 @@ const Navbar = (props) => {
 			<nav class='navbar navbar-expand-md justify-content-between'>
 				<div class='nav'>
 					<a class='navbar-brand' href='#'>
-						<img
-							src='/docs/4.0/assets/brand/bootstrap-solid.svg'
-							width='30'
-							height='30'
-							alt=''
-						/>
+						<img src={Logo} width='110' height='110' alt='' />
 					</a>
 					<ul class='navbar-nav mr-auto'>
 						<li class='nav-item'>
@@ -52,12 +48,7 @@ const Navbar = (props) => {
 			<nav class='navbar navbar-expand-md justify-content-between'>
 				<div class='nav'>
 					<a class='navbar-brand' href='#'>
-						<img
-							src='/docs/4.0/assets/brand/bootstrap-solid.svg'
-							width='30'
-							height='30'
-							alt=''
-						/>
+						<img src={Logo} width='110' height='110' alt='' />
 					</a>
 					<ul class='navbar-nav mr-auto'>
 						<li class='nav-item'>
